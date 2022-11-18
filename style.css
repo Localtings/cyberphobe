@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+  --bg: #111111;
+  --font: #00cd29;
+  --p: #10b130;
+  --btn-border: #188f30;
+  --btn-primary-font: #f1e9e9;
+  --btn-primary-bg: #2a6d37;
+  --btn-secondary-bg: #202020;
+  --ls-name: #d13b3b;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: 'Press Start 2P', cursive;
+  line-height: 2;
+  font-size: 20px;
+  color: var(--font);
+}
+
+body {
+  background-color: var(--bg);
+}
+
+section {
+  margin-bottom: 100px;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: var(--p);
+}
+
+h1 {
+  font-size: 36px;
+  text-shadow: 0 5px 10px var(--btn-border);
+}
+
+h1:after {
+  content: "_";
+  opacity: 0;
+  animation: cursor-blink 0.7s step-end infinite;
+}
+
+@keyframes cursor-blink {
+  from, to {
+    opacity: 0
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h2:before {
+  content: "~$: ";
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  display: inline-flex;
+  align-content: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-style: solid;
+  border-width: 2px;
+  transition: 150ms;
+}
+
+.btn:hover {
+  box-shadow: 0 0 8px 4px var(--btn-border);
+}
+
+.btn-primary {
+  color: var(--btn-primary-font);
+  background-color: var(--btn-primary-bg);
+  border-color: var(--btn-border);
+}
+
+.btn-secondary {
+  color: var(--font);
+  background-color: var(--btn-secondary-bg);
+  border-color: var(--btn-border);
+}
+
+#container {
+  padding: 200px;
+}
+
+#hero {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+#ls-item {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#ls-item:before {
+  content: ">  ";
+  color: var(--bg);
+}
+
+#ls-item:hover {
+  text-decoration: underline;
+}
+
+#ls-item:hover:before {
+  color: var(--font);
+}
