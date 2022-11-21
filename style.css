@@ -111,7 +111,7 @@ h2:before {
   justify-items: center;
 }
 
-#ls-item {
+.ls-item {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
