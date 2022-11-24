@@ -116,15 +116,15 @@ h2:before {
   text-overflow: ellipsis;
 }
 
-#ls-item:before {
+.ls-item:before {
   content: ">  ";
   color: var(--bg);
 }
 
-#ls-item:hover {
+.ls-item:hover {
   text-decoration: underline;
 }
 
-#ls-item:hover:before {
+.ls-item:hover:before {
   color: var(--font);
 }
