@@ -18,7 +18,7 @@ html {
 * {
   font-family: 'Press Start 2P', cursive;
   line-height: 2;
-  font-size: 20px;
+  font-size: 1rem;
   color: var(--font);
 }
 
@@ -39,7 +39,7 @@ p {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 2rem;
   text-shadow: 0 5px 10px var(--btn-border);
 }
 
@@ -60,7 +60,7 @@ h1:after {
 }
 
 h2 {
-  font-size: 25px;
+  font-size: 1.25rem;
 }
 
 h2:before {
@@ -102,13 +102,23 @@ h2:before {
 }
 
 #container {
-  padding: 200px;
+  padding: 200px 300px;
+}
+
+@media screen and (max-width: 980px) {
+  #container {
+    padding: 50px;
+  }
 }
 
 #hero {
   display: flex;
   align-items: center;
   justify-items: center;
+}
+
+#footer-text {
+  text-align: center;
 }
 
 .ls-item {
